@@ -1,0 +1,88 @@
+.titulo{
+    text-align: center;
+}
+.contenedor{
+    width: 20%;
+    background-color: red;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    border: black 5px solid;
+    margin: 5px;
+}
+#componentes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.nombre{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.imagen{
+    width: 200px;
+    background-color: white;
+}
+.desc{
+    color: white;
+    font-size: 15px;
+    background-color: black;
+    height: 100px;
+    text-align: center;
+}
+.precio{
+    font-size: 20px;
+    width: auto;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+.cantidad{
+    color: white;
+    font-size: 20px;
+}
+#carrito{
+    display: flex;
+    justify-content: center;
+}
+.precio-carrito{
+    width: auto;
+    height: 20px;
+    background-color: red;
+    padding: 5px;
+    border: black 2px solid;
+}
+.reset:hover{
+    background-color: red;
+    text-transform: lowercase;
+    font-size: 20px;
+    transition: 1s;
+}
+.boton-masmenos{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    
+}
+.boton-masmenos:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+.boton:hover{
+    background-color: black;
+    color: white;
+    width: auto;
+    height: auto;
+    font-size: 25px;
+    transition: 1s;
+}
+.img-pago{
+    width: 100px;
+}
+#pagos{
+    display: flex;
+    justify-content: center;
+}
