@@ -59,6 +59,7 @@
     text-transform: lowercase;
     font-size: 20px;
     transition: 1s;
+    cursor: pointer;
 }
 .boton-masmenos{
     width: 30px;
@@ -70,6 +71,7 @@
     background-color: black;
     color: white;
     transition: 1s;
+    cursor: pointer;
 }
 .boton:hover{
     background-color: black;
@@ -78,6 +80,7 @@
     height: auto;
     font-size: 25px;
     transition: 1s;
+    cursor: pointer;
 }
 .img-pago{
     width: 100px;
@@ -85,4 +88,13 @@
 #pagos{
     display: flex;
     justify-content: center;
+}
+.contenedor:hover{
+    cursor: pointer;
+}
+.boton-pagos:hover{
+    cursor: pointer;
+}
+#pagos{
+    display: none;
 }

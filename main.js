@@ -128,6 +128,10 @@ const tarjetasCarrito = (nombre, precio, cantidad) => {
         resetCarrito(nombre)
     })
 
+    botonPagosDOM.addEventListener("click", ()=>{
+        pagaras()
+    })
+
     contenedorBotones.appendChild(botonRestarDOM)
     contenedorBotones.appendChild(botonSumarDOM)
     contenedorBotones.appendChild(cantidadDOM)
@@ -220,18 +224,27 @@ const mediosPago = (imagen2, metodo) => {
     const imagen2DOM = document.createElement("img")
     const metodoDOM = document.createElement("h2")
     const pagarDOM = document.createElement("p")
+    const botonCDOM = document.createElement("button")
 
     contenedor2.classList.add("contenedor")
     imagen2DOM.classList.add("img-pago")
     metodoDOM.classList.add("metodo")
     pagarDOM.classList.add("pagar")
+    botonCDOM.classList.add("boton-cancelar")
+
+    botonCDOM.addEventListener("click", ()=>{
+        cancelarPago()
+    })
     
+
     imagen2DOM.src = imagen2
     metodoDOM.innerText = metodo
+    botonCDOM.innerText = "Cancelar"
 
     contenedor2.appendChild(imagen2DOM)
     contenedor2.appendChild(metodoDOM)
     contenedor2.appendChild(pagarDOM)
+    contenedor2.appendChild(botonCDOM)
     
     return contenedor2
 }
@@ -246,3 +259,9 @@ document.addEventListener("DOMContentLoaded",()=>{
     mostrarCarrito()
 })
 
+function pagaras(){
+    document.getElementById("pagos").style.display = "flex"
+}
+function cancelarPago(){
+    document.getElementById("pagos").style.display = "none"
+}
